@@ -1,0 +1,36 @@
+{
+  "name": "plp_smartcropmonitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cherubismark/PLP_smartcropMonitor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cherubismark/PLP_smartcropMonitor/issues"
+  },
+  "homepage": "https://github.com/Cherubismark/PLP_smartcropMonitor#readme",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
