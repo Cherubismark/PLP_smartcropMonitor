@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Crop Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart Crop Monitor</h1>
+
+  <section>
+    <h2>Add Crop</h2>
+    <form id="cropForm">
+      <input type="text" id="name" placeholder="Crop Name" required>
+      <input type="text" id="location" placeholder="Location" required>
+      <input type="date" id="plantedAt" required>
+      <button type="submit">Add Crop</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>All Crops</h2>
+    <button onclick="loadCrops()">Load Crops</button>
+    <ul id="cropList"></ul>
+  </section>
+
+  <section>
+    <h2>Check Weather</h2>
+    <input type="text" id="weatherLocation" placeholder="Enter location">
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weatherResult"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

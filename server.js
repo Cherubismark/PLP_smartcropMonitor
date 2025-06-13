@@ -18,6 +18,9 @@ connectDB();
 
 sequelize.sync({ force: false }) // Set to true only if you want to recreate tables
   .then(() => {
+    app.use(express.static('public'));
+
+    
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
   })
   .catch((err) => console.error(err));
